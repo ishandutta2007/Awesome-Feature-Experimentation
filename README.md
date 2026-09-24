@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Feature-Experimentation"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Feature-Experimentation?style=flat-square&logo=github&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Feature-Experimentation"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Feature-Experimentation?style=flat-square&logo=github&color=gold" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Feature-Experimentation/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Feature-Experimentation?style=flat-square&color=blue" alt="License"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
@@ -55,9 +55,9 @@ Below is a tabular breakdown of leading commercial SaaS experimentation and feat
 
 ## 🛠️ Open-Source GitHub Projects & Frameworks
 
-Open-source feature flag and experimentation platforms allow complete data ownership and custom warehouse integrations. The list below is sorted by **GitHub Star Count (descending)**.
+Open-source feature flag and experimentation platforms allow complete data ownership and custom warehouse integrations. The list below is sorted by **GitHub Stars_Count (descending)**.
 
-| Project & Repo Link | GitHub Stars | License | Core Capabilities |
+| Project & Repo Link | GitHub_Stars | License | Core Capabilities |
 | :--- | :--- | :--- | :--- |
 | **[PostHog](https://github.com/PostHog/posthog)** 🦔 | [<img src="https://img.shields.io/github/stars/PostHog/posthog?style=social&color=white" alt="PostHog Stars"/>](https://github.com/PostHog/posthog/stargazers) | MIT / ELv2 | All-in-one open-source product analytics, feature flags, A/B testing, and session recording suite. |
 | **[Unleash](https://github.com/Unleash/unleash)** 🔓 | [<img src="https://img.shields.io/github/stars/Unleash/unleash?style=social&color=white" alt="Unleash Stars"/>](https://github.com/Unleash/unleash/stargazers) | Apache-2.0 | Enterprise-grade open-source feature management platform with progressive rollouts and experiment strategies. |

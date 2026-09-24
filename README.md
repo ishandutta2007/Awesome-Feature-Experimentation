@@ -1,211 +1,104 @@
-# Awesome-Feature-Experimentation
-
-## Top Feature Experimentation Platforms Ecosystem
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**
-
-*Focused on A/B Testing, Feature Flags, Experimentation Stats, Warehouse-Native Analysis & Progressive Delivery*
-
-**Last updated: September 2026**
-
-
-
-This repository tracks notable **SaaS platforms** and **open-source projects** for **Feature Experimentation**. These systems enable A/B and multivariate testing, feature flag-driven experiments, statistical analysis, and warehouse-native metrics so product teams can measure impact and ship with confidence.
-
-
-
-**Examples** include Statsig, Eppo, Optimizely, VWO, AB Tasty, Kameleoon, GrowthBook, LaunchDarkly Experiments, Convert Experiences, and Dynamic Yield (the category leaders).
-
-
-
-**Open-source emphasis**: Feature experimentation has a strong open-source leader in **GrowthBook** (feature flags + experimentation + warehouse-native stats). Related open feature-flag platforms (Unleash, Flagsmith) also support experimentation workflows. This section is heavily expanded.
-
-
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-
-
-## Table of Contents
-
-- [SaaS/Hosted Platforms](#saas-products)
-
-- [Open-Source GitHub Projects](#open-source-github-projects)
-
-- [How to Contribute](#how-to-contribute)
-
-- [Disclaimer](#disclaimer)
-
-
-
-## SaaS/Hosted Platforms
-
-- **[Statsig](https://www.statsig.com/)**  
-
-  Product experimentation and feature-management platform with advanced stats (CUPED, sequential, Bayesian), feature flags, and high-volume event infrastructure.
-
-
-
-- **[Eppo](https://www.geteppo.com/)**  
-
-  Warehouse-native experimentation platform focused on statistical rigor, CUPED, sequential testing, and deep integration with data warehouses for mature data teams.
-
-
-
-- **[Optimizely](https://www.optimizely.com/)**  
-
-  Enterprise experimentation and feature-management platform with visual editing, server-side testing, and full-stack experimentation capabilities.
-
-
-
-- **[VWO](https://vwo.com/)**  
-
-  Conversion optimization and experimentation platform with A/B testing, visual editor, and insights for web and product teams.
-
-
-
-- **[AB Tasty](https://www.abtasty.com/)**  
-
-  Experimentation and personalization platform for A/B testing, feature experimentation, and customer experience optimization.
-
-
-
-- **[Kameleoon](https://www.kameleoon.com/)**  
-
-  AI-driven experimentation and personalization platform for A/B testing and feature experimentation across web and apps.
-
-
-
-- **[GrowthBook Cloud](https://www.growthbook.io/)**  
-
-  Managed offering of the open-source GrowthBook platform—feature flags, experimentation, and warehouse-native analysis.
-
-
-
-- **[LaunchDarkly (Experiments)](https://launchdarkly.com/)**  
-
-  Feature management platform with experimentation capabilities layered on top of robust feature-flag infrastructure.
-
-
-
-- **[Convert Experiences](https://www.convert.com/)**  
-
-  A/B testing and experimentation platform with visual editor and targeting for conversion optimization.
-
-
-
-- **[Dynamic Yield](https://www.dynamicyield.com/)**  
-
-  Personalization and experimentation platform used for A/B testing, recommendations, and experience optimization at scale.
-
-
-
-## Open-Source GitHub Projects
-
-- **[GrowthBook](https://github.com/growthbook/growthbook)**  
-
-  Leading open-source platform for feature flags, experimentation, and product analytics—warehouse-native metrics, advanced stats engine, and full self-hosting (MIT).
-
-
-
-- **[Unleash](https://github.com/Unleash/unleash)**  
-
-  Open-source feature flag and experimentation platform with strategies, gradual rollouts, and SDKs for progressive delivery.
-
-
-
-- **[Flagsmith](https://github.com/Flagsmith/flagsmith)**  
-
-  Open-source feature flag and remote config platform that supports experimentation and targeting workflows.
-
-
-
-- **[PostHog (experiments / flags)](https://github.com/PostHog/posthog)**  
-
-  Open-source product analytics platform with feature flags and experimentation capabilities.
-
-
-
-- **[Experiment stats and analysis open libraries](https://github.com/)**  
-
-  Open statistical libraries and notebooks implementing CUPED, sequential testing, Bayesian methods, and SRM checks.
-
-
-
-- **[Feature-flag open SDKs and evaluators](https://github.com/)**  
-
-  Client and server SDKs used to evaluate flags and assign experiment variations locally.
-
-
-
-- **[Warehouse-native metric open connectors](https://github.com/)**  
-
-  SQL and connector patterns for defining experiment metrics directly on BigQuery, Snowflake, Redshift, and similar warehouses.
-
-
-
-- **[Visual editor and front-end experiment open tools](https://github.com/)**  
-
-  Community tools for client-side A/B testing and visual variation management.
-
-
-
-- **[Progressive delivery open controllers](https://github.com/)**  
-
-  Kubernetes and application-level tools (e.g., Flagger, Argo Rollouts) that complement feature experimentation with traffic shifting.
-
-
-
-- **[Awesome feature-flag and experimentation lists](https://github.com/)**  
-
-  Curated collections of open tools and best practices for flags and experiments.
-
-
-
-### Additional Strong Open-Source Options
-
-- Self-hosting **GrowthBook** for full control of flags, experiments, and warehouse-native analysis.
-
-- Using **Unleash** or **Flagsmith** when feature flags are the primary need and experiments are secondary.
-
-- Combining open flags with commercial stats engines (or vice versa) in hybrid setups.
-
-- Accepting that polished visual editors, global edge evaluation, advanced enterprise governance, and managed stats infrastructure still favor commercial platforms (Statsig, Eppo, Optimizely, VWO, LaunchDarkly, etc.).
-
-- Focusing open-source efforts on data ownership, transparent stats, and avoiding vendor lock-in for experiment results.
-
-
-
-**Frameworks for building custom systems**: Define flags and experiments in GrowthBook (or Unleash) → assign variations via SDKs → log events to your warehouse → compute metrics with warehouse-native SQL or GrowthBook’s engine → decide and roll out. Suitable for engineering-led product teams. Many organizations run GrowthBook self-hosted or use commercial platforms for higher-touch stats and support.
-
-
-
-## How to Contribute
-
-1. Fork the repo.
-
-2. Add/edit entries in `README.md` (follow existing format).
-
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
-
-4. Submit PR with a short explanation.
-
-
-
-Star the repo if you find it useful!
-
-
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-
-- Experimentation systems influence user experience and product decisions. Proper statistical practice, privacy compliance, and change control are required. This list is not statistical or product advice.
-
-
+# 🧪 Awesome Feature Experimentation & A/B Testing Ecosystem
+
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome Feature Experimentation Banner" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Feature-Experimentation"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Feature-Experimentation?style=flat-square&logo=github&color=gold" alt="GitHub Stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Feature-Experimentation/blob/main/LICENSE"><img src="https://img.shields.io/github/license/ishandutta2007/Awesome-Feature-Experimentation?style=flat-square&color=blue" alt="License"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> 🚀 **Curated directory of SaaS platforms, Open-Source GitHub projects, CUPED statistical engines, and Warehouse-Native analytics for Feature Experimentation, A/B Testing, and Progressive Delivery.**
 
 ---
 
-**Made for product engineers, data scientists, and growth teams running rigorous experiments.**
+## 📚 Table of Contents
 
-Let's keep experimentation transparent, warehouse-native, and as open as practical.
+- [📊 Market Overview & Industry Dynamics](#-market-overview--industry-dynamics)
+- [☁️ SaaS & Hosted Experimentation Platforms](#️-saas--hosted-experimentation-platforms)
+- [🛠️ Open-Source GitHub Projects & Frameworks](#️-open-source-github-projects--frameworks)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [☕ Support & Acknowledgments](#-support--acknowledgments)
+- [📈 Star History](#-star-history)
+- [⚠️ Disclaimer](#%EF%B8%8F-disclaimer)
+
+---
+
+## 📊 Market Overview & Industry Dynamics
+
+> **Estimated Market Size & Structure:**  
+> The global **Feature Management & Experimentation software market** is estimated at **$2.5 Billion+ in 2026** and is growing at ~18-22% CAGR driven by product-led growth (PLG), AI-assisted decision making, and warehouse-native analytics.  
+> The market is **moderately fragmented**, featuring legacy enterprise digital experience suites (Optimizely, VWO), agile high-growth specialized platforms (LaunchDarkly, Statsig), data-warehouse-native statistical engines (Eppo), and a rapidly expanding open-source ecosystem (PostHog, GrowthBook, Unleash).
+
+---
+
+## ☁️ SaaS & Hosted Experimentation Platforms
+
+Below is a tabular breakdown of leading commercial SaaS experimentation and feature flag platforms, sorted by **company scale (Valuation / Revenue)** in descending order.
+
+| Platform | Company Scale (Valuation / Est. Revenue) | Starting Paid Tier Price | Free Tier / Trial Limits | Key Features & Focus |
+| :--- | :--- | :--- | :--- | :--- |
+| **[Optimizely](https://www.optimizely.com/)** 🏢 | **~$1.5B+ Valuation** ($300M+ ARR) | ~$36,000 / year (Custom annual billing) | 14-Day Free Trial (Visual Editor limits apply) | Enterprise web & server-side A/B testing, visual editor, and full-stack digital experience platform. |
+| **[LaunchDarkly](https://launchdarkly.com/)** 🚩 | **$3.0B Valuation** ($100M+ ARR) | $8 / seat / month (Starter Plan) | 14-Day Free Trial (Starter features, 1,000 Client-Side MAUs) | Industry-standard feature management infrastructure with integrated experimentation and metric tracking. |
+| **[Statsig](https://www.statsig.com/)** 📈 | **~$1.0B Valuation** ($50M+ ARR) | $150 / month (Pro Plan, 5M events included) | **Free Forever**: 2 Million metered events/mo, unlimited seats & flags, 50k session replays. | Advanced statistical engine (CUPED, sequential, Bayesian), automated root-cause analysis, and feature flags. |
+| **[VWO](https://vwo.com/)** (Visual Website Optimizer) 🎯 | **~$500M+ Valuation** ($50M+ ARR) | $198 / month (Testing Starter Plan) | **Free Forever**: Up to 50,000 tested users/mo for web testing. | Conversion rate optimization (CRO), heatmaps, visual A/B test editor, and full-stack experiments. |
+| **[AB Tasty](https://www.abtasty.com/)** 🧪 | **~$300M+ Valuation** ($40M+ ARR) | ~$1,000 / month (Custom enterprise contract) | 14-Day Free Trial (Demonstration & demo sandbox access) | Client-side and server-side feature experimentation, AI personalization, and customer journey optimization. |
+| **[Kameleoon](https://www.kameleoon.com/)** 🤖 | **~$250M Valuation** ($35M+ ARR) | ~$1,200 / month (Custom annual billing) | 14-Day Free Trial (Sandbox environment) | AI-driven experimentation, web A/B testing, real-time personalization, and consent management. |
+| **[Eppo](https://www.geteppo.com/)** 🏦 | **$220M Acquisition** (Acquired by Datadog / Datadog Experiments) | ~$450 / month (Datadog Experiments tier) | No Free Tier (Demo request / enterprise evaluation required) | Warehouse-native statistical engine connecting directly to Snowflake, BigQuery, and Databricks with CUPED. |
+| **[Convert Experiences](https://www.convert.com/)** ⚡ | **~$50M Valuation** ($10M+ ARR) | $99 / month (Community Plan) | 14-Day Free Trial (Full feature access, up to 50k tested visitors) | Privacy-first, GDPR-compliant web A/B testing with fast visual editor and zero performance flicker. |
+| **[GrowthBook Cloud](https://www.growthbook.io/)** 🌳 | **~$30M Valuation** ($5M+ ARR) | $20 / user / month (Pro Plan) | **Free Forever**: Up to 3 users, unlimited feature flags & experiment metrics. | Managed offering of the open-source GrowthBook platform—feature flags, warehouse-native stats engine. |
+
+---
+
+## 🛠️ Open-Source GitHub Projects & Frameworks
+
+Open-source feature flag and experimentation platforms allow complete data ownership and custom warehouse integrations. The list below is sorted by **GitHub Star Count (descending)**.
+
+| Project & Repo Link | GitHub Stars | License | Core Capabilities |
+| :--- | :--- | :--- | :--- |
+| **[PostHog](https://github.com/PostHog/posthog)** 🦔 | [<img src="https://img.shields.io/github/stars/PostHog/posthog?style=social&color=white" alt="PostHog Stars"/>](https://github.com/PostHog/posthog/stargazers) | MIT / ELv2 | All-in-one open-source product analytics, feature flags, A/B testing, and session recording suite. |
+| **[Unleash](https://github.com/Unleash/unleash)** 🔓 | [<img src="https://img.shields.io/github/stars/Unleash/unleash?style=social&color=white" alt="Unleash Stars"/>](https://github.com/Unleash/unleash/stargazers) | Apache-2.0 | Enterprise-grade open-source feature management platform with progressive rollouts and experiment strategies. |
+| **[GrowthBook](https://github.com/growthbook/growthbook)** 🧪 | [<img src="https://img.shields.io/github/stars/growthbook/growthbook?style=social&color=white" alt="GrowthBook Stars"/>](https://github.com/growthbook/growthbook/stargazers) | MIT | Specialized open-source experimentation & feature flag platform with native SQL warehouse connectors (Snowflake, BigQuery). |
+| **[Feast](https://github.com/feast-dev/feast)** 🍱 | [<img src="https://img.shields.io/github/stars/feast-dev/feast?style=social&color=white" alt="Feast Stars"/>](https://github.com/feast-dev/feast/stargazers) | Apache-2.0 | Open-source feature store for machine learning used to serve, track, and experiment with ML feature variations. |
+| **[Flagsmith](https://github.com/Flagsmith/flagsmith)** 🚩 | [<img src="https://img.shields.io/github/stars/Flagsmith/flagsmith?style=social&color=white" alt="Flagsmith Stars"/>](https://github.com/Flagsmith/flagsmith/stargazers) | BSD-3-Clause | Open-source feature flag and remote configuration platform supporting user segment targeting and experiment tracking. |
+| **[Flagger](https://github.com/fluxcd/flagger)** ⛵ | [<img src="https://img.shields.io/github/stars/fluxcd/flagger?style=social&color=white" alt="Flagger Stars"/>](https://github.com/fluxcd/flagger/stargazers) | Apache-2.0 | Kubernetes progressive delivery operator that automates A/B testing, Canary releases, and Blue/Green deployments using Service Meshes. |
+| **[Argo Rollouts](https://github.com/argoproj/argo-rollouts)** 🐙 | [<img src="https://img.shields.io/github/stars/argoproj/argo-rollouts?style=social&color=white" alt="Argo Rollouts Stars"/>](https://github.com/argoproj/argo-rollouts/stargazers) | Apache-2.0 | Kubernetes Controller supporting advanced deployment strategies like Canary, Blue/Green, and automated analysis. |
+| **[OpenFeature Spec](https://github.com/open-feature/spec)** 🌐 | [<img src="https://img.shields.io/github/stars/open-feature/spec?style=social&color=white" alt="OpenFeature Stars"/>](https://github.com/open-feature/spec/stargazers) | Apache-2.0 | CNCF vendor-neutral specification and open standard for feature flag evaluation and experimentation telemetry. |
+
+---
+
+## 🤝 How to Contribute
+
+Contributions are warmly welcome! Help make this curated list the standard resource for feature experimentation.
+
+1. **Fork** this repository. 🍴
+2. **Add or edit** entries in `README.md` following the tabular format. 📝
+3. Ensure pricing, stars, and company scale metrics are factual and verifiable. 🔍
+4. Submit a **Pull Request (PR)** with a summary of changes. 🚀
+
+---
+
+## ☕ Support & Acknowledgments
+
+If you find this repository helpful in evaluating A/B testing platforms, choosing feature flag vendors, or setting up warehouse-native stats:
+
+- ⭐ **Star** this repository to show support!
+- 🍴 **Fork** it to keep a copy for your team.
+- 📢 **Share** it with fellow product engineers and data scientists.
+- 💖 **Sponsor / Buy me a coffee:** Support open-source curation via the [GitHub Sponsor Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+## 📈 Star History
+
+[![Star History Chart](https://star-history.dera.page/svg?repos=ishandutta2007/Awesome-Feature-Experimentation&type=date&legend=top-left)](https://star-history.dera.page/#ishandutta2007/Awesome-Feature-Experimentation&type=date&legend=top-left)
+
+---
+
+## ⚠️ Disclaimer
+
+- This list is **community-curated** for information purposes and does not constitute financial, product, or statistical endorsement.
+- All product names, logos, and brands are property of their respective owners.

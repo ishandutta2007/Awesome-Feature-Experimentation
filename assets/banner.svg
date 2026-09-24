@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
+    </linearGradient>
+
+    <!-- Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+
+    <!-- Card Glow Gradient -->
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.05" />
+    </linearGradient>
+
+    <style>
+      .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 46px; font-weight: 800; fill: #ffffff; letter-spacing: -0.5px; }
+      .subtitle { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 20px; font-weight: 500; fill: #cbd5e1; }
+      .badge-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 13px; font-weight: 600; fill: #a5b4fc; }
+      .stat-val { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 700; fill: #38bdf8; }
+      .stat-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 12px; font-weight: 500; fill: #94a3b8; }
+      
+      /* Animations */
+      @keyframes floatParticle {
+        0%, 100% { transform: translateY(0px) scale(1); opacity: 0.3; }
+        50% { transform: translateY(-15px) scale(1.1); opacity: 0.7; }
+      }
+      @keyframes pulseLine {
+        0%, 100% { stroke-dashoffset: 0; opacity: 0.4; }
+        50% { stroke-dashoffset: 50; opacity: 0.8; }
+      }
+      @keyframes waveBar {
+        0%, 100% { height: 35px; y: 225px; }
+        50% { height: 55px; y: 205px; }
+      }
+      @keyframes waveBar2 {
+        0%, 100% { height: 60px; y: 200px; }
+        50% { height: 40px; y: 220px; }
+      }
+
+      .p1 { animation: floatParticle 6s ease-in-out infinite; }
+      .p2 { animation: floatParticle 8s ease-in-out infinite 1s; }
+      .p3 { animation: floatParticle 7s ease-in-out infinite 2s; }
+      .animated-wave-1 { animation: waveBar 4s ease-in-out infinite; }
+      .animated-wave-2 { animation: waveBar2 4s ease-in-out infinite 1s; }
+      .pulse-path { stroke-dasharray: 8 4; animation: pulseLine 12s linear infinite; }
+    </style>
+  </defs>
+
+  <!-- Base Layer Background -->
+  <rect width="100%" height="100%" rx="16" fill="url(#bgGrad)" />
+
+  <!-- Geometric Grid Background Pattern (Dynamic Aspect) -->
+  <g opacity="0.07">
+    <path d="M0 40H1200 M0 80H1200 M0 120H1200 M0 160H1200 M0 200H1200 M0 240H1200 M0 280H1200" stroke="#ffffff" stroke-width="1"/>
+    <path d="M100 0V340 M200 0V340 M300 0V340 M400 0V340 M500 0V340 M600 0V340 M700 0V340 M800 0V340 M900 0V340 M1000 0V340 M1100 0V340" stroke="#ffffff" stroke-width="1"/>
+  </g>
+
+  <!-- Background Decorative Dynamic Curves/Shapes (Behind Text Layer) -->
+  <g opacity="0.25">
+    <circle cx="150" cy="80" r="120" fill="#6366f1" filter="blur(40px)" class="p1" />
+    <circle cx="1050" cy="260" r="140" fill="#ec4899" filter="blur(50px)" class="p2" />
+    <circle cx="850" cy="70" r="90" fill="#a855f7" filter="blur(35px)" class="p3" />
+  </g>
+
+  <!-- Background Animated Data Visualization Graphic (Shifted Right/Bottom to NOT obstruct foreground text) -->
+  <g transform="translate(820, 80)">
+    <!-- Card Frame -->
+    <rect width="320" height="190" rx="12" fill="url(#glowGrad)" stroke="#475569" stroke-width="1" stroke-opacity="0.5" />
+    
+    <!-- Header of Card -->
+    <text x="20" y="32" class="badge-text">VARIATION B vs CONTROL (A/B STATS)</text>
+    <line x1="20" y1="45" x2="300" y2="45" stroke="#334155" stroke-width="1" />
+
+    <!-- Mini Chart Bars (Dynamic Animated Elements) -->
+    <!-- Control Bar -->
+    <rect x="40" y="110" width="28" height="60" rx="4" fill="#475569" />
+    <text x="40" y="185" class="stat-label">Control</text>
+
+    <!-- Variation Bar 1 -->
+    <rect x="90" y="80" width="28" height="90" rx="4" fill="#6366f1" class="animated-wave-1" />
+    <text x="95" y="185" class="stat-label">Var A</text>
+
+    <!-- Variation Bar 2 -->
+    <rect x="140" y="60" width="28" height="110" rx="4" fill="#a855f7" class="animated-wave-2" />
+    <text x="145" y="185" class="stat-label">Var B</text>
+
+    <!-- Stat Highlights -->
+    <text x="200" y="85" class="stat-val">+14.2%</text>
+    <text x="200" y="102" class="stat-label">Conversion Lift</text>
+
+    <text x="200" y="135" class="stat-val">99.4%</text>
+    <text x="200" y="152" class="stat-label">Confidence (p &lt; 0.01)</text>
+
+    <!-- Trend line over chart -->
+    <path d="M 54 110 Q 104 70 154 55 T 280 40" fill="none" stroke="#38bdf8" stroke-width="2.5" class="pulse-path" />
+  </g>
+
+  <!-- Foreground Content (Text & Title - Crisp & Unobstructed) -->
+  <g transform="translate(60, 0)">
+    <!-- Top Pill Tag -->
+    <g transform="translate(0, 52)">
+      <rect width="280" height="28" rx="14" fill="#1e293b" stroke="#6366f1" stroke-width="1.5" />
+      <text x="14" y="18" class="badge-text">⚡ CURATED EXPERIMENTATION ECOSYSTEM</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="132" class="title">Awesome Feature Experimentation 🧪</text>
+
+    <!-- Gradient Divider Bar -->
+    <rect x="0" y="152" width="680" height="4" rx="2" fill="url(#accentGrad)" />
+
+    <!-- Subtitle -->
+    <text x="0" y="192" class="subtitle">A/B Testing, Feature Flags, CUPED Stats, &amp; Warehouse-Native Platforms</text>
+    
+    <!-- Meta Bullet Points -->
+    <g transform="translate(0, 225)">
+      <!-- Item 1 -->
+      <g transform="translate(0, 0)">
+        <circle cx="8" cy="8" r="5" fill="#38bdf8" />
+        <text x="22" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500" fill="#94a3b8">SaaS &amp; Open-Source Leaderboard</text>
+      </g>
+
+      <!-- Item 2 -->
+      <g transform="translate(240, 0)">
+        <circle cx="8" cy="8" r="5" fill="#a855f7" />
+        <text x="22" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500" fill="#94a3b8">CUPED &amp; Sequential Testing</text>
+      </g>
+
+      <!-- Item 3 -->
+      <g transform="translate(480, 0)">
+        <circle cx="8" cy="8" r="5" fill="#ec4899" />
+        <text x="22" y="12" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500" fill="#94a3b8">Warehouse-Native Analytics</text>
+      </g>
+    </g>
+  </g>
+</svg>
